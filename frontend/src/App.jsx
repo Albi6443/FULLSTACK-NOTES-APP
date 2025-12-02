@@ -22,7 +22,7 @@ function App() {
       <Route path='/dashboard' element={<ProtectedRoute><Dashboard/></ProtectedRoute>}/>
       <Route path='*' element={<PageNotFound/>}/>
       <Route path="/addNote" element={ <ProtectedRoute><AddNote /> </ProtectedRoute>} />    
-      <Route path="/editNotes/:id" element={ <ProtectedRoute><EditNotes /></ProtectedRoute>} />
+      <Route path="/editNote/:id" element={ <ProtectedRoute><EditNotes /></ProtectedRoute>} />
     </Routes>
    </Router>
   )
